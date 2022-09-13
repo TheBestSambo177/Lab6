@@ -16,3 +16,44 @@ let topMovies = [{id: 0, title: "The Shawshank Redemption", year: 1994, image_ur
 
 //------------------------------------------------------------------------------------------------------
 //Load JSON File stored on web server at http://danieldangs.com/itwd6408/json/faqs.json
+let loadJSON = function() {
+	//1: Use CORS API website as proxy to retrieve JSON file
+	4
+	let proxy = 'https://cors-anywhere.herokuapp.com/';
+	//Declare the URL indicates the location of the JOSN file
+	let url = "http://danieldangs.com/itwd6408/json/faqs.json";
+	//2: Create XMLHttpRequest object
+	let ourRequest = new XMLHttpRequest();
+	//Set ourRequest to URL to get data (not send data)
+	ourRequest.open('GET', proxy + url, true);//"True": Asynchronous mode
+	//Send XMLHttpRequest object or ourRequest via Internet
+	ourRequest.send();
+	//3: Receive response (reply) from web server and Process that data
+	ourRequest.onload = function() {
+	//Check if the response status is OK (o error), render data on web page
+	if (ourRequest.status >= 200 && ourRequest.status < 400) {
+	let receivedData = JSON.parse(ourRequest.responseText);//Parse JSON text to become a JS object
+	renderHTML(receivedData);
+	} else {
+	//Exception handling
+	console.log("Connected to the server successfully but it returned an error!");
+	}
+	};
+	//-------------------------------------------
+	//Function renderHTML()
+	function renderHTML(data) {
+	//Build an html string which will be rendered on browser as an html-formatted element
+	let htmlString = "";
+	//Retrieve question and relevant answer
+	for (i = 0; i < data.length; i++) {
+	//Get question
+	htmlString += "<h4>" + data[i].question + "</h4>";
+	//Get answer
+	htmlString += "<p>" + data[i].answer + "</p><br>";
+	}
+	//Render the whole htmlString to web page
+	document.getElementById("questions-list").innerHTML = htmlString;
+	}
+	}
+	//Call to execute this loadJSON() function
+	loadJSON();

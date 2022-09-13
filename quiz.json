@@ -1,0 +1,75 @@
+{
+	"quiz": [
+		{"question": "What does HTML stand for?",
+		"answers": [
+			"A. Hyperlinks and Text Markup Language",
+			"B. Home Tool Markup Language",
+			"C. Hyper Text Markup Language" ],
+		"correctAnswer": 2},
+
+		{"question": "Who is making the Web standards?",
+		"answers": [
+			"A. Microsoft",
+			"B. Google",
+			"C. The World Wide Web Consortium"],
+		"correctAnswer": 2},
+	 
+		{"question": "Choose the correct HTML element for the largest heading:",
+		"answers": [
+			"A. &lt;h1&gt;",
+			"B. &lt;heading&gt;",
+			"C. &lt;h6&gt;"],
+		"correctAnswer": 0}	,
+
+		{"question": "What is the correct HTML element for inserting a line break?",
+		"answers": [
+			"A. &lt;lb&gt;",
+			"B. &lt;br&gt;",
+			"C. &lt;break&gt;"],
+		"correctAnswer": 1},
+		
+		{"question": "How can you make a numbered list?",
+		"answers": ["A. &lt;list&gt;",
+					"B. &lt;ul&gt;",
+					"C. &lt;ol&gt;"],
+		"correctAnswer": 2}, 
+		
+		{"question": "Which HTML element defines the title of a document?",
+		"answers": ["A. &lt;title&gt;",
+					"B. &lt;head&gt;",
+					"C. &lt;meta&gt;"],
+		"correctAnswer": 0}, 
+
+		{"question": "What does CSS stand for?",
+		"answers": ["A. Creative Style Sheets",
+					"B. Cascading Style Sheets",
+					"C. Computer Style Sheets"],
+		"correctAnswer": 1}, 
+		
+		{"question": "Which HTML element is used to specify a footer for a html document?",
+		"answers": ["A. &lt;bottom&gt;", "B. &lt;footer&gt;"],
+		"correctAnswer": 1},
+		
+		{"question": "An &lt;ifram&lt; is used to display a webpage within a web page?",
+		"answers": ["A. True", "B. False"],
+		"correctAnswer": 0},
+		
+		{"question": "Which HTML tag is used to define an internal style sheet?",
+		"answers": ["A. &lt;style&gt;",
+					"B. &lt;css&gt;",
+					"C. &lt;script&gt;"],
+		"correctAnswer": 0}, 
+
+		{"question": "Which property is used to change the background color?",
+		"answers": ["A. color",
+					"B. bgcolor",
+					"C. background-color"],
+		"correctAnswer": 2}, 
+
+		{"question": "Inside which HTML element do we put the JavaScript?",
+		"answers": ["A. &lt;javascript&gt;",
+					"B. &lt;scripting&gt;",
+					"C. &lt;script&gt;"],
+		"correctAnswer": 2}		
+	]
+}
